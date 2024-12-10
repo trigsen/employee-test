@@ -80,7 +80,11 @@ const UserStatusesPageComponent = () => {
   }, [selectedStatusFilter, userStatusItems, searchTerm])
 
   if (isFetching) {
-    return <CircularProgress />
+    return (
+      <Box sx={styles.loadingContainer}>
+        <CircularProgress />
+      </Box>
+    )
   }
 
   return (
