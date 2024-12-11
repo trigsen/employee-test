@@ -88,7 +88,7 @@ const UserStatusesPageComponent = () => {
   }
 
   return (
-    <Box>
+    <Box sx={styles.container}>
       <UserSearch
         searchInputRef={searchInputRef}
         isCreateButtonDisabled={isPendingUserCreation || !searchTerm.length}
@@ -97,7 +97,7 @@ const UserStatusesPageComponent = () => {
         selectedStatusFilter={selectedStatusFilter}
         onStatusFilterChange={setSelectedStatusFilter}
       />
-      <Box sx={styles.container}>
+      <Box sx={styles.statusesContainer}>
         {filteredUserStatusItems.map((userStatusItem) => {
           return (
             <UserStatusCard

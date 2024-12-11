@@ -60,7 +60,9 @@ export const useMutateQuery = <
     mutationFn: async (variables) => {
       const baseUrl = import.meta.env.VITE_API_URL!
 
-      const pathParametersRecord = variables.pathParameters as Record<string, string> | undefined
+      const { pathParameters, ...bodyVariables } = variables
+
+      const pathParametersRecord = pathParameters as Record<string, string> | undefined
 
       let urlPaths = url.split('/')
 
@@ -79,7 +81,7 @@ export const useMutateQuery = <
 
       const response = await fetch(`${baseUrl}${constructedUrl}`, {
         method,
-        body: JSON.stringify(variables),
+        body: JSON.stringify(bodyVariables),
         headers: {
           'Content-Type': 'application/json'
         }
