@@ -1,8 +1,8 @@
 import React, { useCallback, useState } from 'react'
 import { Box, Card, CardContent, Typography } from '@mui/material'
 import { SelectInput } from '@/shared/ui/select-input'
-import { UserStatus } from '@/modules/common/definitions/user-status'
-import { UserStatusOptions } from '@/modules/common/constants/user-status-options.ts'
+import { UserStatus } from '@/modules/user-statuses-manager/definitions/user-status-item'
+import { UserStatusOptions } from '@/modules/user-statuses-manager/constants/user-status-options.ts'
 import { RadioButtonUnchecked } from '@mui/icons-material'
 
 import { styles } from './user-status-card.styles'

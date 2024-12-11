@@ -8,8 +8,8 @@ import SearchIcon from '@mui/icons-material/Search'
 import AddIcon from '@mui/icons-material/Add'
 
 import { styles } from './user-search.styles.ts'
-import { UserStatusOptions } from '@/modules/common/constants/user-status-options.ts'
-import { UserStatus } from '@/modules/common/definitions/user-status'
+import { UserStatusOptions } from '@/modules/user-statuses-manager/constants/user-status-options.ts'
+import { UserStatus } from '@/modules/user-statuses-manager/definitions/user-status-item'
 
 interface UserSearchProps {
   onChangeSearchTerm: (text: string) => void

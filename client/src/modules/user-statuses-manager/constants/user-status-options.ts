@@ -1,5 +1,5 @@
 import { SelectOption } from '@/shared/ui/select-input'
-import { UserStatus } from '@/modules/common/definitions/user-status'
+import { UserStatus } from '@/modules/user-statuses-manager/definitions/user-status-item'
 
 export const UserStatusOptions: SelectOption<UserStatus>[] = [
   {

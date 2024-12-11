@@ -5,7 +5,7 @@ import {
   useMutateQuery
 } from '@/shared/providers/query-client'
 import { UserStatusItemDefinition } from '@/modules/user-statuses-manager/definitions/user-status-item/user-status-item.definition.ts'
-import { UserStatus } from '@/modules/common/definitions/user-status'
+import { UserStatus } from '@/modules/user-statuses-manager/definitions/user-status-item'
 
 export const userStatusItemsQueryKey = createListQueryKey<UserStatusItemDefinition[]>({
   base: 'users'

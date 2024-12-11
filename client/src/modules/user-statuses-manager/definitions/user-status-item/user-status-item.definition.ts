@@ -1,4 +1,9 @@
-import { UserStatus } from '@/modules/common/definitions/user-status'
+export const enum UserStatus {
+  WORKING = 'Working',
+  ON_VACATION = 'OnVacationser',
+  LUNCH_TIME = 'LunchTime',
+  BUSINESS_TRIP = 'BusinessTrip'
+}
 
 export interface UserStatusItemDefinition {
   id: number

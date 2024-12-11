@@ -10,7 +10,7 @@ import {
   userStatusItemsQueryKey,
   useUserStatusItems
 } from '@/modules/user-statuses-manager/definitions/user-status-item'
-import { UserStatus } from '@/modules/common/definitions/user-status'
+import { UserStatus } from '@/modules/user-statuses-manager/definitions/user-status-item'
 import { updateQueryItem } from '@/shared/providers/query-client/query-key-updaters.ts'
 import { debounce } from '@/shared/libs/debounce.ts'
 
