@@ -2,8 +2,8 @@
 
 
 1. Add .env file with `VITE_API_URL='http://localhost:3001'` in client application (port is hardcoded in express server)
-2. Start express server with `cd server && node index.js`
-3. Start client application with `cd client && npm run dev`
+2. Start express server with `cd server && yarn install && node index.js`
+3. Start client application with `cd client && yarn install && yarn run dev`
 4. Open `http://localhost:5173/` in your browser
 
 # Test task requirements
